@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My YouTube Page</title>
+    <link rel="stylesheet" href="youtude.css">
+</head>
+<body>
+    <header>
+        <div class="logo">YouTube</div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search">
+            <button onclick="searchVideos()">Search</button>
+        </div>
+        <div class="user-menu">
+            <img src="user-icon.png" alt="User Icon">
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Subscriptions</a></li>
+            <li><a href="#">Library</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="video-grid" id="video-grid">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6Wqf-eu3LA8?si=6M-HcCM1hBncwW2N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                <h3>BHAIRAVA (4K) - KANNADA FULL MOVIE | KICCHA SUDEEP | AMALA PAUL | KANNADA ACTION MOVIE</h3>
+                <p>Channel Name • Views • Time  </p>
+                </div>
+                
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kpS66n94_SU?si=wABQtSsDz5MITdas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>DILWALA | Kannada Full Movie | Ganesh, Rachita Ram, Priyanka Rao</h3>
+                <p>Channel Name • Views • Time</p>
+            </div>
+            <!-- Add more video blocks as needed -->
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; YouTube Page</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
