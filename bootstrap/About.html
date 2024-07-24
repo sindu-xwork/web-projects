@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Internal CSS -->
+  
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 20px;
+      margin-top: 50px;
+
+    }
+    .about-section {
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .about-section h2 {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #dee2e6;
+      padding-bottom: 10px;
+    }
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+            
+            footer{
+    background-color: rgb(128, 61, 128);
+    }
+
+*   {
+    
+    box-sizing: border-box;
+   }
+
+.footer-icons{
+
+    display: flex;
+    justify-content: center;
+
+   }
+
+.footer-icons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    color: black;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.footerBottom{
+    text-align: center;
+    color: white;
+}
+ </style>
+  </head>
+  <body>
+  
+        <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <img width="80px" height="80px" src="Xworkz.jpeg" alt="Description">
+  
+      <a class="navbar-brand" href="#">Bootstrap Example</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="task1.html" target="_blank">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html"target="_blank">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="task2.html" target="_blank">Components</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sin.html" target="_blank" >Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="about-section">
+            <h2>About Bootstrap</h2>
+            <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+            <ul>
+              <li>Extensive documentation and community support</li>
+              <li>Customizable with Sass variables</li>
+              <li>Support for modern browsers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>Bootstrap </p>
+  </footer>
+
+  <form class="row g-3" >
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary"></button>
+      </div>
+    </form>
+
+    <div class="card text-bg-dark" >
+        <img src="Xworkz.jpeg" class="card-img" alt="..." height="400px" width="40px" >
+        <div class="card-img-overlay">
+          <h5 class="card-title" style="text-align: center;">Xworkz</h5>
+          <p class="card-text" style="text-align: center;">WE ARE WORKING PROFESSIONALS Click here to enroll for CSR-2024.</p>
+          <p class="card-text"><small></small></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 16rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm-wG_S-KbsDhryrJHPTuPfdr6bkwl_0JXw7-ljgZz00FdNRiu0ocsWdtvXAs7b_V4uRg&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+</body>
+</html>
